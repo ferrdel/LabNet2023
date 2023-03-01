@@ -1,0 +1,15 @@
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\bin\Debug\net6.0\LabHelloWorld.exe
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\bin\Debug\net6.0\LabHelloWorld.deps.json
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\bin\Debug\net6.0\LabHelloWorld.runtimeconfig.json
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\bin\Debug\net6.0\LabHelloWorld.dll
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\bin\Debug\net6.0\LabHelloWorld.pdb
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\obj\Debug\net6.0\LabHelloWorld.csproj.AssemblyReference.cache
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\obj\Debug\net6.0\LabHelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\obj\Debug\net6.0\LabHelloWorld.AssemblyInfoInputs.cache
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\obj\Debug\net6.0\LabHelloWorld.AssemblyInfo.cs
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\obj\Debug\net6.0\LabHelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\obj\Debug\net6.0\LabHelloWorld.dll
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\obj\Debug\net6.0\refint\LabHelloWorld.dll
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\obj\Debug\net6.0\LabHelloWorld.pdb
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\obj\Debug\net6.0\LabHelloWorld.genruntimeconfig.cache
+C:\Users\ferrd\Documents\Lab_Net\LabHelloWorld\LabHelloWorld\obj\Debug\net6.0\ref\LabHelloWorld.dll
