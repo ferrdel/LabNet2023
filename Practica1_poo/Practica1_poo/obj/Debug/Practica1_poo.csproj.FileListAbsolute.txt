@@ -1,0 +1,7 @@
+C:\Users\ferrd\Documents\Lab_Net\Practica1_poo\Practica1_poo\bin\Debug\Practica1_poo.exe.config
+C:\Users\ferrd\Documents\Lab_Net\Practica1_poo\Practica1_poo\bin\Debug\Practica1_poo.exe
+C:\Users\ferrd\Documents\Lab_Net\Practica1_poo\Practica1_poo\bin\Debug\Practica1_poo.pdb
+C:\Users\ferrd\Documents\Lab_Net\Practica1_poo\Practica1_poo\obj\Debug\Practica1_poo.csproj.AssemblyReference.cache
+C:\Users\ferrd\Documents\Lab_Net\Practica1_poo\Practica1_poo\obj\Debug\Practica1_poo.csproj.CoreCompileInputs.cache
+C:\Users\ferrd\Documents\Lab_Net\Practica1_poo\Practica1_poo\obj\Debug\Practica1_poo.exe
+C:\Users\ferrd\Documents\Lab_Net\Practica1_poo\Practica1_poo\obj\Debug\Practica1_poo.pdb
