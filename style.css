@@ -1,0 +1,28 @@
+body{
+    background-color:blanchedalmond;
+    text-align: center;
+    margin: 10%;
+}
+
+div{
+    margin-top: 7%;
+}
+
+.h1{
+    text-align:inherit;
+}
+
+
+button{
+    background-color:darkorange
+    ;
+}
+
+.input.enviar{
+    background-color: aqua;
+}
+
+div.puntos{
+    margin-left: 10%;
+    margin-right: 10%;
+}
