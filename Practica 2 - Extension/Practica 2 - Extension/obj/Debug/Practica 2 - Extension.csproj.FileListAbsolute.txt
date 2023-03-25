@@ -1,0 +1,7 @@
+C:\Users\ferrd\Documents\Lab_Net\Practica 2 - Extension\Practica 2 - Extension\bin\Debug\Practica 2 - Extension.exe.config
+C:\Users\ferrd\Documents\Lab_Net\Practica 2 - Extension\Practica 2 - Extension\bin\Debug\Practica 2 - Extension.exe
+C:\Users\ferrd\Documents\Lab_Net\Practica 2 - Extension\Practica 2 - Extension\bin\Debug\Practica 2 - Extension.pdb
+C:\Users\ferrd\Documents\Lab_Net\Practica 2 - Extension\Practica 2 - Extension\obj\Debug\Practica 2 - Extension.csproj.AssemblyReference.cache
+C:\Users\ferrd\Documents\Lab_Net\Practica 2 - Extension\Practica 2 - Extension\obj\Debug\Practica 2 - Extension.csproj.CoreCompileInputs.cache
+C:\Users\ferrd\Documents\Lab_Net\Practica 2 - Extension\Practica 2 - Extension\obj\Debug\Practica 2 - Extension.exe
+C:\Users\ferrd\Documents\Lab_Net\Practica 2 - Extension\Practica 2 - Extension\obj\Debug\Practica 2 - Extension.pdb
