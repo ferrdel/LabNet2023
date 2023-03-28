@@ -1,17 +1,32 @@
-﻿@{
-    Layout = null;
+﻿@model List<Lab.EF.MVC.>
+@{
+    ViewBag.Title = "Categories Page";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-        <h2>Categorias</h2>
-    </div>
-</body>
-</html>
+<h2>Categorias.</h2>
+
+<button>@Html.ActionLink("Nueva Categoria", "Insert", "Categories")</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre Categoria</th>
+            <th scope="col">Descripcion</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var cat in Model)
+        {
+            <tr>
+                <td>@cat.NombreCategoria</td>
+                <td>@cat.Descripcion</td>
+                <td>@Html.ActionLink("Eliminar", "Delete", new { id = @cat. })</td>
+            </tr>
+
+        }
+    </tbody>
+
+</table>

@@ -1,0 +1,29 @@
+﻿@model List<Lab.EF.WEBApi.Models.RMEpisodiosView>
+@{
+    ViewBag.Title = "Episodios de Rick & Morty";
+}
+
+<div>
+    <h2>Lista de Episodios</h2>
+</div>
+
+<div>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <td>NOMBRE</td>
+                <td>FECHA ESTRENO</td>
+                <td>NRO EPISODIO</td>
+            </tr>
+
+            @foreach (var p in Model)
+            {
+                <tr>
+                    <td>@p.Name</td>
+                    <td>@p.AirDate</td>
+                    <td>@p.Episode</td>
+                </tr>
+            }
+        </thead>
+    </table>
+</div>
