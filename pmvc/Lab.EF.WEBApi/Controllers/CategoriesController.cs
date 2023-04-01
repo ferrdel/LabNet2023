@@ -18,44 +18,83 @@ namespace Lab.EF.WEBApi.Controllers
 
         // GET api/
 
-        public IEnumerable<Categories> Get()
-        {
-            return logic.GetAll();
-        }
-
-        // GET api/<controller>/5
-        public Categories Get(int id)
-        {
-            return logic.GetId(id);
-        }
-
-        // POST api/<controller>
-        public HttpResponseMessage Post([FromBody] Categories categoria)
+        [System.Web.Mvc.HttpGet]
+        public IHttpActionResult Get()
         {
             try
             {
-                if (string.IsNullOrEmpty(categoria.CategoryName))
-                {
-                    throw new ArgumentException("Los campos Nombre es requerido.");
-                }
-                logic.Add(categoria);
+                List<Categories> categories = logic.GetAll();
 
-                return Request.CreateResponse(HttpStatusCode.Created, categoria);
+                List<CategoriesView> listaCategorias = categories
+                    .Select(e => new CategoriesView()
+                    {
+                        Id = e.CategoryID,
+                        NombreCategoria = e.CategoryName,
+                        Descripcion = e.Description
+                    })
+                    .ToList();
+
+                return Ok(listaCategorias);
             }
-            catch (ArgumentException ex)
+            catch (Exception ex)
             {
-                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+                return Content(HttpStatusCode.BadRequest, new { Error = ex.Message });
             }
         }
 
+        [System.Web.Mvc.HttpGet]
+        // GET api/<controller>/5
+        public IHttpActionResult Get(int id)
+        {
+            try
+            {
+                Categories categories = logic.GetId(id);
+
+                CategoriesView categId = new CategoriesView()
+                {
+                    Id = categories.CategoryID,
+                    NombreCategoria = categories.CategoryName,
+                    Descripcion = categories.Description
+                };
+
+                return Ok(categId);
+            }
+            catch (Exception ex)
+            {
+                return Content(HttpStatusCode.BadRequest, new { Error = ex.Message });
+            }
+        }
+
+        [System.Web.Mvc.HttpPost]
+        // POST api/<controller>
+        public IHttpActionResult Post([FromBody] Categories categoria)
+        {
+            try
+            {
+                Categories categories = new Categories()
+                {
+                    CategoryName = categoria.CategoryName,
+                    Description = categoria.Description
+                };
+
+                logic.Add(categories);
+                return Content(HttpStatusCode.Created, new { CategoryName = categoria.CategoryName, Description = categoria.Description });
+            }
+            catch (Exception ex)
+            {
+                return Content(HttpStatusCode.BadRequest, new { Error = ex.Message });
+            }
+        }
+
+        [System.Web.Http.HttpPut]
         // PUT api/<controller>/5
-        public IHttpActionResult Put(int id, [FromBody] Categories categoria)
+        public IHttpActionResult Update(int id, [FromBody] Categories categoria)
         {
             try
             {
                 if (categoria == null || categoria.CategoryID != id)
                 {
-                    throw new ArgumentException("El ID de l categoria no coincide.");
+                    throw new ArgumentException("El ID de la categoria no coincide.");
                 }
 
                 var existingCateg = logic.GetId(id);
@@ -68,7 +107,7 @@ namespace Lab.EF.WEBApi.Controllers
                 existingCateg.Description = categoria.Description;
                 logic.Update(existingCateg);
 
-                return Ok();
+                return Content(HttpStatusCode.OK, categoria);
             }
             catch (Exception ex)
             {
@@ -77,13 +116,14 @@ namespace Lab.EF.WEBApi.Controllers
 
         }
 
+        [System.Web.Mvc.HttpDelete]
         // DELETE api/<controller>/5
         public IHttpActionResult Delete(int id)
         {
             try
             {
                 logic.Delete(id);
-                return Ok();
+                return Ok("La categoria se Elimino");
             }
             catch (ArgumentException ex)
             {
