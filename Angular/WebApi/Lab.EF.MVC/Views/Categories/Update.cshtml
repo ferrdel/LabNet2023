@@ -1,0 +1,23 @@
+﻿@model Lab.EF.MVC.Models.CategoriesView
+@{
+    ViewBag.Title = "DatoUpdate";
+}
+
+<h2>Modificar Datos</h2>
+
+@using (Html.BeginForm("Update", "Categories", FormMethod.Post))
+{
+    <form>
+        <div class="form-group">
+            <div>
+                <label for="inputCateg">Nombre Categoria</label>
+            </div>
+            <div>@Html.TextBoxFor(c => c.NombreCategoria)</div>
+        </div>
+        <div class="form-group">
+            <div><label for="exampleInputDesc">Descripcion</label></div>
+            <div>@Html.TextBoxFor(d => d.Descripcion)</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+}
